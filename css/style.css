@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "Bebas";
+    src: url("../font/BEBAS.ttf");
+}
+body, html {
+    padding:0;
+    margin:0;
+    background-color: #00738e;
+}
+.content {
+    width: 100vw;
+    height:100vh;
+    overflow: hidden;
+}
+svg {
+    width:100%;
+    height:100%;
+    font: 700 200% "Bebas";
+    color: #00738e;
+}
+h1 {
+    font: 900 300% "Bebas";
+    word-spacing: 2px;
+    color: #9ab720;
+}
+h2, h3 {
+    font-family: "Bebas";
+    word-spacing: 2px;
+    color: #fff;
+}
+a {
+    text-decoration: underline;
+    color: #fff;
+}
+p {
+    word-spacing: 2px;
+    font: 100% "Arial";
+    color: #fff;
+}
+.container {
+    width: 700px;
+}
+#banner {
+    font: 18pt "Bebas";
+    color: #00738e;
+}
+#countryTags {
+    word-spacing: 2px;
+}
+#stats {
+    word-spacing: 2px;
+}
+#banana {
+    cursor: pointer;
+}
+.bactive {
+    z-index: 1;
+}
+.tossing {
+    animation: tossing 2.5s infinite;
+}
+@keyframes tossing {
+    0% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+.bactive:hover {
+    transform-origin: 50% 50%;
+    animation: rot .5s 3 alternate;
+}
+@keyframes rot {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+}
+
+
+#statsfill {
+    opacity: 0;
+    z-index: 99;
+}
+
+.reset {
+    background-color:#99b720;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Bebas;
+    font-size:20px;
+    font-weight:bold;
+    padding:10px 32px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #69733b;
+}
+.reset:hover {
+    background-color:#8da32d;
+}
+.reset:active {
+    position:relative;
+    top:1px;
+}
+.button {
+    position: fixed;
+    bottom: 2%;
+    left: 47%;
+
+}
